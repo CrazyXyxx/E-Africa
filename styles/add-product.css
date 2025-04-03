@@ -1,0 +1,131 @@
+
+/* add-product.css - Add Product Page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+input[type="text"], input[type="number"], input[type="file"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+.label {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    text-align: left;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #ff5c5c;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #ff3e3e;
+}
+
+.back-button:active {
+    background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"], input[type="number"], textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
